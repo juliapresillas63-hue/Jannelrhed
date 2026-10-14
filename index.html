@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rene Baterbonia</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+  .internal-box {
+    background-color: #d4f5dc;
+    padding: 15px;
+    border: 2px solid #2e9e50;
+    border-radius: 8px;
+  }
+
+  em {
+    color: crimson;
+    font-weight: bold;
+  }
+
+  .blue-text {
+    color: royalblue;
+    font-weight: bold;
+  }
+
+  #special {
+    background-color: #fff3a3;
+    padding: 8px;
+    border-radius: 6px;
+  }
+
+  .selector-demo p {
+    color: #6a2c91;
+  }
+
+  .border1 { border: 3px solid #333; }
+  .border2 { border: 3px dashed crimson; }
+  .border3 { border: 4px dotted royalblue; }
+  .border4 { border: 6px double seagreen; }
+  .border5 { border: 3px solid #333; border-radius: 15px; }
+  .border6 { border-top: 5px solid crimson; border-bottom: 5px solid royalblue; }
+
+  .bg1 { background-color: #ffb347; }
+  .bg2 { background-image: linear-gradient(to right, #ff6b6b, #ffe66d); }
+  .bg3 { background-image: radial-gradient(white, #5b8def); }
+  .bg4 { background-color: #222; color: white; }
+
+  .box-model {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 30px;
+    background-color: #bfe3ff;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Rene Baterbonia</h1>
+  <p>My HTML and CSS Activity</p>
+  <nav>
+    <a href="#one">1. HTML Sectioning</a>
+    <a href="#two">2. Types of CSS</a>
+    <a href="#three">3. Selectors</a>
+    <a href="#four">4. Border</a>
+    <a href="#five">5. Background</a>
+    <a href="#six">6. Box Model</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="one">
+  <h2>1. HTML Sectioning</h2>
+  <p>HTML sectioning elements divide a web page into parts so it is easier to read and understand.</p>
+  <ul>
+    <li>&lt;header&gt; - the top part of the page</li>
+    <li>&lt;nav&gt; - the navigation links</li>
+    <li>&lt;main&gt; - the main content</li>
+    <li>&lt;section&gt; - a group of related content</li>
+    <li>&lt;article&gt; - content that can stand on its own</li>
+    <li>&lt;aside&gt; - extra side information</li>
+    <li>&lt;footer&gt; - the bottom part of the page</li>
+  </ul>
+  <article>
+    <h3>Example article</h3>
+    <p>This part is inside an article tag.</p>
+    <aside>This is an aside tag inside the article.</aside>
+  </article>
+</section>
+
+<section id="two">
+  <h2>2. Three Types of CSS</h2>
+
+  <h3>Inline CSS</h3>
+  <p style="color: white; background-color: crimson; padding: 12px; border-radius: 8px;">
+    This paragraph uses inline CSS. The style is written inside the tag.
+  </p>
+
+  <h3>Internal CSS</h3>
+  <div class="internal-box">
+    This box uses internal CSS. The style is written inside the style tag in the head.
+  </div>
+
+  <h3>External CSS</h3>
+  <div class="external-box">
+    This box uses external CSS. The style is written in a separate file called style.css.
+  </div>
+</section>
+
+<section id="three">
+  <h2>3. CSS Selectors</h2>
+  <div class="selector-demo">
+    <p>Element selector: this <em>word</em> is red because I used the em selector.</p>
+    <p class="blue-text">Class selector: this text is blue and bold because of the class blue-text.</p>
+    <p id="special">ID selector: this text has a yellow background because of the id special.</p>
+    <p>Descendant selector: this text is purple because it is a p inside .selector-demo.</p>
+  </div>
+</section>
+
+<section id="four">
+  <h2>4. CSS Border</h2>
+  <p class="border1">Solid border</p>
+  <p class="border2">Dashed border</p>
+  <p class="border3">Dotted border</p>
+  <p class="border4">Double border</p>
+  <p class="border5">Rounded border</p>
+  <p class="border6">Top and bottom border only</p>
+</section>
+
+<section id="five">
+  <h2>5. CSS Background</h2>
+  <p class="bg1">Background color</p>
+  <p class="bg2">Linear gradient background</p>
+  <p class="bg3">Radial gradient background</p>
+  <p class="bg4">Black background with white text</p>
+</section>
+
+<section id="six">
+  <h2>6. CSS Box Model</h2>
+  <p>Every element is a box. From inside to outside it has: content, padding, border and margin.</p>
+  <div class="box-model">
+    This is the content. It has 20px padding, a 5px border and 30px margin.
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>Made by Rene Baterbonia</p>
+</footer>
+
+</body>
+  </html>
